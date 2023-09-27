@@ -2,5 +2,33 @@
   font-family: 'RobotoCondensed-Regular';
   font-weight: 400;
   font-style: normal;
-  src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'), url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+  src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'), url('../fonts/RobotoCondensed-Regular.woff') format('woff2');
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/RobotoCondensed-Light.woff2') format('woff2'), url('../fonts/RobotoCOndensed-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Italic';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/RobotoCondensed-Italic.woff2') format('woff2'), url('../fonts/RobotoCOndensed-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/RobotoCondensed-Bold.woff2') format('woff2'), url('../fonts/RobotoCOndensed-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Anton-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Anton-Regular.woff2') format('woff2'), url('../fonts/Anton-Regular.woff') format('woff');
 }
