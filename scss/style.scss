@@ -1,0 +1,50 @@
+@import 'vars';
+@import 'fonts';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  padding-top: 25px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1220px;
+}
+
+body {
+  color: $accent;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: 'RobotoCondensed-Regular';
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list {
+  display: flex;
+  gap: 0 40px;
+  padding-top: 25px;
+}
+
+.menu-link {
+
+}
