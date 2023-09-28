@@ -24,10 +24,16 @@ a {
   background: $header-gardient;
 }
 
-.container {
+.big-container {
   margin: 0 auto;
   padding: 0 10px;
   max-width: 1220px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 920px;
 }
 
 body {
@@ -114,5 +120,77 @@ body {
     margin-top: auto;
     margin-bottom: 30px;
     align-self: center;
+  }
+}
+
+.info {
+  margin-bottom: 100px;
+
+  &__part {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    &--first {
+      display: block;
+    }
+
+    &--second .info__content .info__text {
+      max-width: 352px;
+    }
+
+    &--third {
+      padding-top: 66px;
+
+      .info__content .info__text {
+        max-width: 377px;
+      }
+    }
+
+    .info__part-img {
+      object-fit: cover;
+    }
+
+    .info__content {
+      flex-basis: 415px;
+    }
+  }
+}
+
+.info__title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: 'RobotoCondensed-Light';
+}
+
+.info__part-textbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+
+.info__text {
+  flex-basis: 415px;
+  margin-bottom: 30px;
+}
+
+.info__table {
+  flex-basis: 450px;
+  border-bottom: 1px solid $accent;
+  position: relative;
+  top: 20px;
+
+  &::before {
+    content: '';
+    border-top: 1px solid $accent;
+    position: absolute;
+    width: 100%;
+    top: -20px;
+  }
+
+  td {
+    padding-bottom: 20px;
   }
 }

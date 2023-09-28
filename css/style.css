@@ -51,10 +51,16 @@ a {
   background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
 }
 
-.container {
+.big-container {
   margin: 0 auto;
   padding: 0 10px;
   max-width: 1220px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 920px;
 }
 
 body {
@@ -136,4 +142,68 @@ body {
   margin-top: auto;
   margin-bottom: 30px;
   align-self: center;
+}
+
+.info {
+  margin-bottom: 100px;
+}
+.info__part {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.info__part--first {
+  display: block;
+}
+.info__part--second .info__content .info__text {
+  max-width: 352px;
+}
+.info__part--third {
+  padding-top: 66px;
+}
+.info__part--third .info__content .info__text {
+  max-width: 377px;
+}
+.info__part .info__part-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info__part .info__content {
+  flex-basis: 415px;
+}
+
+.info__title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: "RobotoCondensed-Light";
+}
+
+.info__part-textbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+
+.info__text {
+  flex-basis: 415px;
+  margin-bottom: 30px;
+}
+
+.info__table {
+  flex-basis: 450px;
+  border-bottom: 1px solid #040404;
+  position: relative;
+  top: 20px;
+}
+.info__table::before {
+  content: "";
+  border-top: 1px solid #040404;
+  position: absolute;
+  width: 100%;
+  top: -20px;
+}
+.info__table td {
+  padding-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
