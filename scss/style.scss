@@ -18,6 +18,10 @@ a {
 
 .header {
   padding-top: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: $header-gardient;
 }
 
 .container {
@@ -27,11 +31,11 @@ a {
 }
 
 body {
+  font-family: 'RobotoCondensed-Regular', sans-serif;
   color: $accent;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
-  font-family: 'RobotoCondensed-Regular';
 }
 
 .nav {
@@ -45,6 +49,70 @@ body {
   padding-top: 25px;
 }
 
-.menu-link {
+.menu-left {
+  padding-left: 25px;
+}
 
+.menu-right {
+  padding-right: 80px;
+}
+
+.menu-link {
+  color: $gray;
+  font-size: 16px;
+}
+
+.promo {
+  background-image: url('../images/promo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  &__title {
+    font-family: 'Impact-Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 76px;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    align-self: center;
+    margin-right: -10px;
+  }
+
+  &__subtitle {
+    font-family: 'Impact-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    border-bottom: 1px solid $accent;
+    margin-bottom: 10px;
+    align-self: center;
+
+    &__date {
+      display: block;
+      font-size: 34px;
+      color: $gold;
+      padding: 10px 0;
+    }
+  }
+  
+  &__text {
+    font-size: 16px;
+    color: $gray;
+    margin-bottom: 10px;
+  }
+
+  &__arrow {
+    margin-top: auto;
+    margin-bottom: 30px;
+    align-self: center;
+  }
 }

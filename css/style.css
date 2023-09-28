@@ -2,7 +2,31 @@
   font-family: "RobotoCondensed-Regular";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format(woff);
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff2");
+}
+@font-face {
+  font-family: "RobotoCondensed-Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../fonts/RobotoCOndensed-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "RobotoCondensed-Italic";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Italic.woff2") format("woff2"), url("../fonts/RobotoCOndensed-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCOndensed-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Impact-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Impact-Regular.woff2") format("woff2"), url("../fonts/Impact-Regular.woff") format("woff");
 }
 html {
   box-sizing: border-box;
@@ -21,6 +45,10 @@ a {
 
 .header {
   padding-top: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
 }
 
 .container {
@@ -30,11 +58,11 @@ a {
 }
 
 body {
+  font-family: "RobotoCondensed-Regular", sans-serif;
   color: #040404;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
-  font-family: "RobotoCondensed-Regular";
 }
 
 .nav {
@@ -46,4 +74,66 @@ body {
   display: flex;
   gap: 0 40px;
   padding-top: 25px;
+}
+
+.menu-left {
+  padding-left: 25px;
+}
+
+.menu-right {
+  padding-right: 80px;
+}
+
+.menu-link {
+  color: #363636;
+  font-size: 16px;
+}
+
+.promo {
+  background-image: url("../images/promo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.promo__inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 100px;
+}
+.promo__title {
+  font-family: "Impact-Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 76px;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  align-self: center;
+  margin-right: -10px;
+}
+.promo__subtitle {
+  font-family: "Impact-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  border-bottom: 1px solid #040404;
+  margin-bottom: 10px;
+  align-self: center;
+}
+.promo__subtitle__date {
+  display: block;
+  font-size: 34px;
+  color: #9F6B08;
+  padding: 10px 0;
+}
+.promo__text {
+  font-size: 16px;
+  color: #363636;
+  margin-bottom: 10px;
+}
+.promo__arrow {
+  margin-top: auto;
+  margin-bottom: 30px;
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */
