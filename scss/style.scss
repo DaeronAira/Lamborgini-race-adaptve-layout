@@ -224,3 +224,58 @@ body {
     margin: auto auto 90px auto;
   }
 }
+
+.evo {
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+
+.evo-black {
+  background-color: $gray;
+  padding: 100px 0 50px;
+  color: #fff;
+
+  .evo-black__info {
+    display: flex;
+    justify-content: space-between;
+
+    .evo-black__title {
+      text-transform: uppercase;
+      font-size: 32px;
+      font-weight: 300;
+      font-family: 'RobotoCondensed-Light';
+      padding-right: 50px;
+    }
+
+    .evo-black__infobox {
+      flex-basis: 437px;
+
+      .evo-black__text {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.evo-white__inner {
+  padding-top: 125px;
+}
+
+.evo-black__inner {
+
+  .evo-black__img {
+    display: block;
+    margin: 170px auto 60px;
+  }
+
+  .evo__descr-list {
+    display: flex;
+    justify-content: center;
+    gap: 0 65px;
+
+    dt {
+      text-transform: uppercase;
+    }
+  }
+}
