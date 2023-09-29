@@ -194,3 +194,33 @@ body {
     padding-bottom: 20px;
   }
 }
+
+.track {
+  background-image: url(../images/track-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: 'RobotoCondensed-Light';
+
+  }
+
+  &__text {
+    max-width: 435px;
+  }
+
+  &__img {
+    margin: auto auto 90px auto;
+  }
+}
