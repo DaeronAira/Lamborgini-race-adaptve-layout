@@ -347,4 +347,49 @@ body {
 }
 .evo-black__inner .evo__descr-list dt {
   text-transform: uppercase;
+}
+
+.blog {
+  margin-bottom: 100px;
+}
+.blog__title {
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: "RobotoCondensed-Light";
+}
+.blog__item-img {
+  margin-bottom: 20px;
+}
+.blog__item-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  min-height: 46px;
+}
+.blog__item-text {
+  margin-bottom: 10px;
+}
+.blog__item-link {
+  font-size: 12px;
+  color: #363636;
+}
+.blog__slider {
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+.blog__button {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  left: 50%;
+}
+.blog .swiper-button-left {
+  transform: translateX(-42px);
+}
+.blog .swiper-button-right {
+  transform: translateX(8px);
 }/*# sourceMappingURL=style.css.map */
