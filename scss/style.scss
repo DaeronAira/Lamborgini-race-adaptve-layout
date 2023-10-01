@@ -516,3 +516,121 @@ body {
     align-items: center;
   }
 }
+
+.menu-mobile,
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: $breakpoint_xxl) {
+  .promo {
+    background-position: left center;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: flex;
+    gap: 0 20px;
+  }
+  
+  .logo-img {
+    width: 50px;
+  }
+
+  .nav {
+    align-items: center;
+  }
+
+  .promo__title {
+    font-size: 64px;
+  }
+
+  .promo__subtitle {
+    font-size: 42px;
+  }
+
+  .promo__subtitle__date {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: $breakpoint_xl) {
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .menu-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .menu-mobile.menu--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    height: 100vh;
+    z-index: 5;
+    text-align: center;
+    padding-top: 140px;
+  }
+
+  .menu-link {
+    color: #fff;
+    font-size: 3vh;
+    display: block;
+    padding: 20px 0;
+  }
+
+  .logo {
+    z-index: 10;
+  }
+}
+
+@media (max-width: $breakpoint_l) {
+  .promo__title {
+    font-size: 48px;
+  }
+
+  .promo__subtitle {
+    font-size: 34px;
+  }
+
+  .promo__subtitle__date {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: $breakpoint_m) {
+  .promo__title {
+    font-size: 42px;
+  }
+
+  .promo__subtitle {
+    font-size: 30px;
+  }
+
+  .menu-link {
+    padding: 15px 0;
+  }
+}
