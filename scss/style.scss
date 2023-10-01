@@ -414,3 +414,33 @@ body {
     transform: translateX(8px);
   }
 }
+
+.blog__quote {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+
+  &-box {
+    flex-basis: 434px;
+
+    .blockquote {
+      margin-bottom: 30px;
+
+      &__name {
+        font-weight: 700;
+        margin-bottom: 10px;
+        
+        span {
+          display: block;
+          margin-bottom: 3px;
+          font-size: 12px;
+          color: $gold;
+        }
+      }
+
+      &__text {
+        font-style: italic;
+      }
+    }
+  }
+}
