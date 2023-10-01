@@ -1,3 +1,10 @@
+const menuBtn = document.querySelector('.menu-btn');
+const menuMobile = document.querySelector('.menu-mobile');
+
+menuBtn.addEventListener('click', () => {
+  menuMobile.classList.toggle('menu--open');
+});
+
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
@@ -11,10 +18,8 @@ const swiper = new Swiper('.swiper', {
 });
 
 let map;
-
 async function initMap() {
   const { Map } = await google.maps.importLibrary("maps");
-
   map = new Map(document.getElementById("map"), {
     center: { lat: 37.23211869594363, lng: -8.629691406737209 },
     zoom: 13,
@@ -145,5 +150,4 @@ async function initMap() {
   ]
   });
 }
-
 initMap();
