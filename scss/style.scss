@@ -20,6 +20,10 @@ li {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .header {
   padding-top: 25px;
   position: absolute;
@@ -605,6 +609,28 @@ body {
   .logo {
     z-index: 10;
   }
+
+  .info__part {
+    display: block;
+
+    &-textbox {
+      display: block;
+      padding-bottom: 15px;
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+    &--second .info__content .info__text,
+    &--third .info__content .info__text {
+      max-width: 100%;
+    }
+  }
+
+  .info__table {
+    width: 100%;
+  }
 }
 
 @media (max-width: $breakpoint_l) {
@@ -618,6 +644,14 @@ body {
 
   .promo__subtitle__date {
     font-size: 26px;
+  }
+
+  .info__table td {
+    font-size: 13px;
+  }
+
+  .info__table td:nth-child(2) {
+    padding: 0 5px;
   }
 }
 

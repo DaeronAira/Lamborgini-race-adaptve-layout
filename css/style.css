@@ -559,8 +559,21 @@ body {
   .logo {
     z-index: 10;
   }
+  .info__part {
+    display: block;
+  }
   .info__part-textbox {
     display: block;
+    padding-bottom: 15px;
+  }
+  .info__part-img {
+    width: 100%;
+  }
+  .info__part--second .info__content .info__text, .info__part--third .info__content .info__text {
+    max-width: 100%;
+  }
+  .info__table {
+    width: 100%;
   }
 }
 @media (max-width: 560px) {
@@ -572,6 +585,12 @@ body {
   }
   .promo__subtitle__date {
     font-size: 26px;
+  }
+  .info__table td {
+    font-size: 13px;
+  }
+  .info__table td:nth-child(2) {
+    padding: 0 5px;
   }
 }
 @media (max-width: 320px) {
