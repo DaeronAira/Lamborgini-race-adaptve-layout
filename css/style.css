@@ -516,6 +516,11 @@ body {
     font-size: 32px;
   }
 }
+@media (max-width: 970px) {
+  .evo-white__inner::after {
+    display: none;
+  }
+}
 @media (max-width: 840px) {
   .menu-btn {
     display: flex;
@@ -576,6 +581,24 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 670px) {
+  .evo-white__inner::before {
+    display: none;
+  }
+  .evo-black__inner .evo__descr-list {
+    display: block;
+    text-align: center;
+  }
+  .evo-black__inner .evo__descr-list div {
+    margin-bottom: 15px;
+  }
+  .evo-black .evo-black__info {
+    display: block;
+  }
+  .evo-black .evo-black__info .evo-black__title {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 560px) {
   .promo__title {
     font-size: 48px;
@@ -591,6 +614,9 @@ body {
   }
   .info__table td:nth-child(2) {
     padding: 0 5px;
+  }
+  .evo-black__inner::after {
+    display: none;
   }
 }
 @media (max-width: 320px) {
