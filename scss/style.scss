@@ -639,6 +639,24 @@ body {
   }
 }
 
+@media (max-width: $breakpooint_xlsmall) {
+  .blog__quote {
+    flex-direction: column;
+
+    &-box {
+      flex-basis: auto;
+    }
+
+    &-img {
+      order: -1;
+    }
+  }
+
+  .blog__item-img {
+    width: 100%;
+  }
+}
+
 @media (max-width: $breakpoint_lbig) {
   .evo-white__inner::before {
     display: none;
